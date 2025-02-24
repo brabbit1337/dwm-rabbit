@@ -116,6 +116,7 @@ static const Rule rules[] = {
 	RULE(.wintype = WTYPE "TOOLBAR", .isfloating = 1)
 	RULE(.wintype = WTYPE "SPLASH", .isfloating = 1)
 	RULE(.class = "rabbit-console", .tags = 1 << 0)
+	RULE(.class = "org.wezfurlong.wezterm", .tags = 1 << 0)
 	RULE(.class = "Brave-browser", .tags = 1 << 1)
 	RULE(.class = "Geany", .tags = 1 << 2)
 	RULE(.class = "Spotify", .tags = 1 << 3)
@@ -167,7 +168,10 @@ static const char *dmenucmd[] = {
 	"-sf", selfgcolor,
 	NULL
 };
-static const char *termcmd[]  = { "st", NULL };
+//static const char *termcmd[]  = { "st", NULL };
+//static const char *termcmd[]  = { "kitty", NULL };
+//static const char *termcmd[]  = { "alacritty", NULL };
+static const char *termcmd[]  = { "wezterm", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key            function                argument */
